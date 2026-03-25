@@ -38,6 +38,11 @@ h5 {
   line-height: 1.1;
 }
 
+h1 {
+  font-family: "Montserrat", "Syne", sans-serif;
+  font-weight: 700;
+}
+
 /* ── NAV ── */
 nav {
   position: fixed;
@@ -1449,4 +1454,20 @@ body.nav-open .nav-links a {
   color: var(--gray);
   margin-top: 28px;
   opacity: 0.6;
+}
+
+/* ── BLOG & FAQ PAGE SHARED STYLES ── */
+.blog-hero,
+.faq-hero {
+  padding-top: 140px;
+}
+
+/* Responsive: ensure nav hamburger shows on blog/faq too */
+@media (max-width: 768px) {
+  .blog-hero,
+  .faq-hero {
+    padding-top: 120px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
